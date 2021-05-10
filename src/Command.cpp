@@ -29,7 +29,7 @@ Command::Command(const String &cmd)
             direction = Direction::Reverse;
             break;
         default:
-            state = static_cast<uint8_t>(0xff);
+            state = static_cast<State>(0xff);
             break;
     }
 }
