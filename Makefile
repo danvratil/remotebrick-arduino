@@ -17,7 +17,7 @@ MONITOR_BAUDRATE = 9600
 CFLAGS_STD = -std=gnu11
 CXXFLAGS_STD = -std=gnu++17
 
-CXXFLAGS += -pedantic -Wall -Wextra
+CXXFLAGS += -pedantic -Wall -Wextra -O2
 LDFLAGS += -fdiagnostics-color
 
 CURRENT_DIR = $(shell basename $(CURDIR))
