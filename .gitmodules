@@ -1,3 +1,6 @@
-[submodule "Arduino-Makefile"]
-	path = Arduino-Makefile
-	url = https://github.com/sudar/Arduino-Makefile
+[submodule "lib/ArduinoSTL"]
+	path = lib/ArduinoSTL
+	url = https://github.com/ciband/avr_stl.git
+[submodule "lib/Arduino_AVRSTL"]
+	path = lib/Arduino_AVRSTL
+	url = https://github.com/arduino-libraries/Arduino_AVRSTL.git

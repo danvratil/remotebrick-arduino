@@ -26,7 +26,7 @@ OBJDIR = $(PROJECT_DIR)/build/$(CURRENT_DIR)/$(BOARD_TAG)
 ####### Project configuration
 
 NO_CORE_MAIN_CPP = 1
-ARDUINO_LIBS = SoftwareSerial
+ARDUINO_LIBS = SoftwareSerial Arduino_AVRSTL
 LOCAL_INO_SRCS ?= $(wildcard src/*.ino)
 LOCAL_CPP_SRCS ?= $(wildcard src/*.cpp)
 
