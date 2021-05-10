@@ -25,6 +25,9 @@ OBJDIR = $(PROJECT_DIR)/build/$(CURRENT_DIR)/$(BOARD_TAG)
 
 ####### Project configuration
 
-ARDUINO_LIBS = Wire
+NO_CORE_MAIN_CPP = 1
+ARDUINO_LIBS = SoftwareSerial
+LOCAL_INO_SRCS ?= $(wildcard src/*.ino)
+LOCAL_CPP_SRCS ?= $(wildcard src/*.cpp)
 
 include ./Arduino.mk
