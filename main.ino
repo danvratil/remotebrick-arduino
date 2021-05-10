@@ -1,17 +1,11 @@
-/*
-* SPDX-FileCopyrightText: 2021 Daniel Vrátil <me@dvratil.cz>
-*
-* SPDX-License-Identifier: GPL-3.0-or-later
-*/
+/* Project: src/remotebrick */
 
-#include <SoftwareSerial.h>
+#include <Arduino.h>
+#include <Wire.h>
 
-#include "constants.h"
 
 void setup() {
-
 }
 
 void loop() {
-
 }
