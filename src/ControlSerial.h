@@ -7,11 +7,11 @@ class ControlSerial : public SoftwareSerial {
 public:
     explicit ControlSerial(SerialInput input);
 
-    bool hasCommand();
-    String getCommand();
+    [[nodiscard]] bool hasCommand();
+    [[nodiscard]] String getCommand();
 
 private:
-    bool readCommand();
+    [[nodiscard]] bool readCommand();
 
     String mCmd;
 };

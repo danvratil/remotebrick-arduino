@@ -7,6 +7,8 @@ int Platform::getTxPin(SerialInput input) {
     case SerialInput::USB:
         return static_cast<int>(Pins::USBTxPin);
     }
+
+    __builtin_unreachable();
 }
 
 int Platform::getRxPin(SerialInput input) {
@@ -16,6 +18,8 @@ int Platform::getRxPin(SerialInput input) {
     case SerialInput::USB:
         return static_cast<int>(Pins::USBRxPin);
     }
+
+    __builtin_unreachable();
 }
 
 std::pair<int, int> Platform::getDrivePins() {

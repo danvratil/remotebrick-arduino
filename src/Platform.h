@@ -6,11 +6,11 @@
 
 namespace Platform {
 
-int getRxPin(SerialInput input);
-int getTxPin(SerialInput input);
+[[nodiscard]] int getRxPin(SerialInput input);
+[[nodiscard]] int getTxPin(SerialInput input);
 
-std::pair<int, int> getDrivePins();
-std::pair<int, int> getSteeringPins();
+[[nodiscard]] std::pair<int, int> getDrivePins();
+[[nodiscard]] std::pair<int, int> getSteeringPins();
 
 
 } // namespace

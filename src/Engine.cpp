@@ -6,11 +6,6 @@ Engine::Engine(std::pair<int, int> pins)
     : mPins(pins)
 {}
 
-void Engine::stop() {
-    digitalWrite(mPins.first, LOW);
-    digitalWrite(mPins.second, LOW);
-}
-
 void Engine::run(Engine::Direction direction) {
     if (direction == mCurrentDirection) {
         return;

@@ -13,6 +13,8 @@ Engine::Direction toEngineDirection(Direction direction) {
         case Direction::Left:
             return Engine::Direction::Backward;
     }
+
+    __builtin_unreachable();
 }
 
 } // namespace
